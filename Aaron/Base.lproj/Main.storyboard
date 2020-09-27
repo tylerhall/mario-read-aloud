@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g31-TU-p7g">
+    <device id="ipad11_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="uUX-rd-SFR">
+            <objects>
+                <viewController id="g31-TU-p7g" customClass="ViewController" customModule="Aaron" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2F0-cg-hQ5">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="panther" translatesAutoresizingMaskIntoConstraints="NO" id="GEg-xy-Tln">
+                                <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2TB-lL-6Fg" customClass="SAConfettiView" customModule="Aaron" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WgS-BM-sAm">
+                                <rect key="frame" x="342.5" y="0.0" width="509" height="320.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="256"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="15" height="15"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These are some words" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cH-SJ-1gj">
+                                <rect key="frame" x="-1293.5" y="253" width="2463.5" height="308.5"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="256"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="0.477495004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="3" height="3"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mario0" translatesAutoresizingMaskIntoConstraints="NO" id="N7K-VE-yAL">
+                                <rect key="frame" x="0.0" y="429" width="160" height="320"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brick" translatesAutoresizingMaskIntoConstraints="NO" id="Eh8-Oi-Bgx">
+                                <rect key="frame" x="0.0" y="749" width="4000" height="85"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDa-7b-UKR">
+                                <rect key="frame" x="1086" y="756.5" width="84" height="70"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="48"/>
+                                <state key="normal" title="Go!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="g31-TU-p7g" eventType="touchUpInside" id="5x6-Ur-uBw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OVa-c3-cqa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2TB-lL-6Fg" firstAttribute="top" secondItem="2F0-cg-hQ5" secondAttribute="top" id="B8y-Iv-oCR"/>
+                            <constraint firstAttribute="bottom" secondItem="Eh8-Oi-Bgx" secondAttribute="bottom" id="CyQ-aX-B6E"/>
+                            <constraint firstItem="OVa-c3-cqa" firstAttribute="trailing" secondItem="2cH-SJ-1gj" secondAttribute="trailing" constant="24" id="L9H-Oa-6fF"/>
+                            <constraint firstItem="OVa-c3-cqa" firstAttribute="trailing" secondItem="CDa-7b-UKR" secondAttribute="trailing" constant="24" id="MX0-fC-KzF"/>
+                            <constraint firstItem="2TB-lL-6Fg" firstAttribute="leading" secondItem="2F0-cg-hQ5" secondAttribute="leading" id="MvR-ex-tK8"/>
+                            <constraint firstItem="Eh8-Oi-Bgx" firstAttribute="top" secondItem="N7K-VE-yAL" secondAttribute="bottom" id="NiE-My-60X"/>
+                            <constraint firstItem="GEg-xy-Tln" firstAttribute="leading" secondItem="2F0-cg-hQ5" secondAttribute="leading" id="SbM-wh-IkR"/>
+                            <constraint firstAttribute="bottom" secondItem="2TB-lL-6Fg" secondAttribute="bottom" id="TA2-Fo-qgy"/>
+                            <constraint firstAttribute="bottom" secondItem="GEg-xy-Tln" secondAttribute="bottom" id="X43-NT-kjl"/>
+                            <constraint firstItem="2cH-SJ-1gj" firstAttribute="centerY" secondItem="OVa-c3-cqa" secondAttribute="centerY" id="XD4-Kt-jao"/>
+                            <constraint firstAttribute="trailing" secondItem="GEg-xy-Tln" secondAttribute="trailing" id="cCA-71-O1w"/>
+                            <constraint firstItem="CDa-7b-UKR" firstAttribute="centerY" secondItem="Eh8-Oi-Bgx" secondAttribute="centerY" id="dx2-FO-7Ce"/>
+                            <constraint firstAttribute="trailing" secondItem="2TB-lL-6Fg" secondAttribute="trailing" id="fnW-zC-6uo"/>
+                            <constraint firstItem="N7K-VE-yAL" firstAttribute="leading" secondItem="OVa-c3-cqa" secondAttribute="leading" id="swp-8X-n81"/>
+                            <constraint firstItem="OVa-c3-cqa" firstAttribute="leading" secondItem="Eh8-Oi-Bgx" secondAttribute="leading" id="vy7-Tv-Ueh"/>
+                            <constraint firstItem="GEg-xy-Tln" firstAttribute="top" secondItem="2F0-cg-hQ5" secondAttribute="top" id="yMw-Wz-lhT"/>
+                            <constraint firstItem="WgS-BM-sAm" firstAttribute="centerX" secondItem="OVa-c3-cqa" secondAttribute="centerX" id="yNi-vG-Ngm"/>
+                            <constraint firstItem="WgS-BM-sAm" firstAttribute="top" secondItem="OVa-c3-cqa" secondAttribute="top" id="yeD-1z-6jY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="CDa-7b-UKR" id="GdP-jR-GkP"/>
+                        <outlet property="confettiView" destination="2TB-lL-6Fg" id="5T3-UG-TCt"/>
+                        <outlet property="marioImageView" destination="N7K-VE-yAL" id="tP3-e8-QCT"/>
+                        <outlet property="marioXDistance" destination="swp-8X-n81" id="ixB-HD-3WO"/>
+                        <outlet property="marioYDistance" destination="NiE-My-60X" id="IwC-nK-giT"/>
+                        <outlet property="wordCountLabel" destination="WgS-BM-sAm" id="5vW-2X-09X"/>
+                        <outlet property="wordsLabel" destination="2cH-SJ-1gj" id="hh9-qP-ODx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1sk-84-aFB" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="48"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="brick" width="4000" height="85"/>
+        <image name="mario0" width="160" height="320"/>
+        <image name="panther" width="1820" height="1213"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
